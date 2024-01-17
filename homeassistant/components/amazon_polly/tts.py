@@ -70,9 +70,9 @@ PLATFORM_SCHEMA: Final = BASE_PLATFORM_SCHEMA.extend(
 
 
 def get_engine(
-    hass: HomeAssistant,
+    
     config: ConfigType,
-    discovery_info: DiscoveryInfoType | None = None,
+    
 ) -> Provider | None:
     """Set up Amazon Polly speech component."""
     output_format = config[CONF_OUTPUT_FORMAT]

@@ -44,7 +44,7 @@ def setup_platform(
     hass: HomeAssistant,
     config: ConfigType,
     add_entities: AddEntitiesCallback,
-    discovery_info: DiscoveryInfoType | None = None,
+   
 ) -> None:
     """Set up an ADS sensor device."""
     ads_hub = hass.data.get(ads.DATA_ADS)

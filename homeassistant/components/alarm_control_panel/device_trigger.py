@@ -110,7 +110,6 @@ async def async_get_triggers(
 
 
 async def async_get_trigger_capabilities(
-    hass: HomeAssistant, config: ConfigType
 ) -> dict[str, vol.Schema]:
     """List trigger capabilities."""
     return {
