@@ -153,7 +153,7 @@ class AdsHub:
         self._notification_items = {}
         self._lock = threading.Lock()
 
-    def shutdown(self, *args, **kwargs):
+    def shutdown(self, ):
         """Shutdown ADS connection."""
 
         _LOGGER.debug("Shutting down ADS")

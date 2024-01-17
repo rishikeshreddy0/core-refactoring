@@ -50,10 +50,10 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
 
 
 def setup_platform(
-    hass: HomeAssistant,
+    
     config: ConfigType,
     add_entities: AddEntitiesCallback,
-    discovery_info: DiscoveryInfoType | None = None,
+    
 ) -> None:
     """Connect with serial port and return Acer Projector."""
     serial_port = config[CONF_FILENAME]

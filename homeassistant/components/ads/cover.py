@@ -53,7 +53,7 @@ def setup_platform(
     hass: HomeAssistant,
     config: ConfigType,
     add_entities: AddEntitiesCallback,
-    discovery_info: DiscoveryInfoType | None = None,
+
 ) -> None:
     """Set up the cover platform for ADS."""
     ads_hub = hass.data[DATA_ADS]

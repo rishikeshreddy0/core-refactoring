@@ -24,7 +24,7 @@ MIN_TIME_BETWEEN_UPDATES = timedelta(seconds=90)
 
 
 async def async_setup_entry(
-    hass: HomeAssistant, entry: ConfigEntry, async_add_entities: AddEntitiesCallback
+    hass: HomeAssistant,  async_add_entities: AddEntitiesCallback
 ) -> None:
     """Set up Abode camera devices."""
     data: AbodeSystem = hass.data[DOMAIN]

@@ -37,7 +37,7 @@ def async_add_acmeda_entities(
 
 
 async def update_devices(
-    hass: HomeAssistant, config_entry: ConfigEntry, api: dict[int, Roller]
+    hass: HomeAssistant,  api: dict[int, Roller]
 ) -> None:
     """Tell hass that device info has been updated."""
     dev_registry = dr.async_get(hass)
